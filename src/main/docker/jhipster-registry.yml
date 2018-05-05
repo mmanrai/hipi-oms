@@ -12,7 +12,7 @@ services:
             - SPRING_PROFILES_ACTIVE=dev,native,swagger
             - SECURITY_USER_PASSWORD=admin
             - JHIPSTER_REGISTRY_PASSWORD=admin
-            - SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCH_LOCATIONS=file:./central-config/localhost-config/
+            - SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCH_LOCATIONS=file:./central-server-config/localhost-config/
             # - GIT_URI=https://github.com/jhipster/jhipster-registry/
             # - GIT_SEARCH_PATHS=central-config
         ports:

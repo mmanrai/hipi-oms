@@ -4,6 +4,26 @@ This is a "gateway" application intended to be part of a microservice architectu
 
 This application is configured for Service Discovery and Configuration with the JHipster-Registry. On launch, it will refuse to start if it is not able to connect to the JHipster-Registry at [http://localhost:8761](http://localhost:8761). For more information, read our documentation on [Service Discovery and Configuration with the JHipster-Registry][].
 
+In order to JHipster-Registry on macbook, run following:
+1. git clone https://github.com/jhipster/jhipster-registry.git
+
+2. run following command
+    
+    ` yarn && ./mvnw
+    `
+
+3. Start Kafka
+   
+    ` $KAFKA/bin/zookeeper-server-start.sh config/zookeeper.properties
+    `
+     
+     and 
+        
+     `
+     $KAFKA/bin/kafka-server-start.sh config/server.properties
+     `
+
+
 ## Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
